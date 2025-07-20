@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Income Prediction</title>
+</head>
+<body>
+    <h2>Predict Income Class (<=50K or >50K)</h2>
+    <form action="/predict" method="post">
+        {% for name in feature_names %}
+            <label>{{ name }}:</label>
+            <input type="text" name="{{ name }}" required><br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>

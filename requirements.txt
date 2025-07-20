@@ -1,0 +1,6 @@
+flask
+pandas
+scikit-learn
+## for Hugg
+fastapi
+uvicorn[standard]
